@@ -24,9 +24,9 @@ function Todos() {
                 todos.map((todo)=>{
                     if (todo.finished){
                         
-                        return (
-                        <div key={todo.id} className='flex items-center my-4 gap-4'>
-                            <div className="text-center bg-yellow-300 border-2 border-black rounded-md py-2 w-56"> 
+                        return(
+                        <div key={todo.id} className='flex items-center my-4 sm:gap-4 gap-2'>
+                            <div className="text-center bg-yellow-300 border-2 border-black rounded-md py-2 sm:w-56 w-48 break-words"> 
                                 {todo.text}
                             </div>
                             <button onClick={finishTodoHandle}>
@@ -40,8 +40,10 @@ function Todos() {
                     }
                     else{
                         return(
-                        <div key={todo.id} className='flex items-center my-4 gap-4'>
-                            <div className="text-center border-2 border-black rounded-md py-2 w-56">{todo.text}</div>
+                        <div key={todo.id} className='flex items-center my-4 sm:gap-4 gap-2'>
+                            <div className="text-center border-2 border-black rounded-md py-2 sm:w-56 w-48 break-words">
+                                {todo.text}
+                            </div>
                             <button onClick={finishTodoHandle}>
                                 <img id={todo.id} src="finished.png" alt=""/>
                             </button>

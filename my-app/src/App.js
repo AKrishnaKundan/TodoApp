@@ -16,10 +16,10 @@ function App() {
   return (
     <>
     <Provider store = {store}>
-      <div className="flex justify-center items-center bg-yellow-300 h-screen">
-        <div className='outline outline-white outline-offset-8 bg-white p-10'>
-            <span className="text-5xl font-bold mt-5">TODO</span>
-            <div className="text-5xl font-bold text-yellow-500 mb-5">LIST</div>
+      <div className="flex justify-center items-center bg-yellow-300 min-h-screen overflow-scroll">
+        <div className='outline outline-white outline-offset-8 bg-white sm:p-10 p-5'>
+            <span className="sm:text-5xl  text-3xl font-bold sm:mt-5  mt-3">TODO</span>
+            <div className="sm:text-5xl text-3xl font-bold text-yellow-500 sm:mb-5 mb-3">LIST</div>
             <AddTodo/>
         </div>
       </div>
