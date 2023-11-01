@@ -1,17 +1,10 @@
-import { Provider, useDispatch } from 'react-redux';
+import { Provider } from 'react-redux';
 
 import AddTodo from './components/AddTodo';
-import Todos from './components/Todos';
 
 import {store} from './store';
-import { markAllAsFinished } from './features/todoSlice';
 
 function App() {
-
-
-  const finishedAll = ()=>{
-    //dispatch(markAllAsFinished());
-  }
 
   return (
     <>
